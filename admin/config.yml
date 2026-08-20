@@ -1,0 +1,75 @@
+backend:
+  name: github
+  repo: YOUR-GITHUB-USERNAME/creovix-site   # <-- change this to your actual GitHub username/repo
+  branch: main
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
+
+media_folder: "images/portfolio"
+public_folder: "images/portfolio"
+
+collections:
+  - name: "portfolio"
+    label: "Portfolio"
+    file: "data/portfolio.json"
+    format: "json"
+    fields:
+      - { label: "Items", name: "items", widget: "list", fields: [
+          { label: "Title", name: "title", widget: "string" },
+          { label: "Category", name: "category", widget: "select", options: ["Logo","Poster","Business Card","Facebook Cover","Other"] },
+          { label: "Image", name: "image", widget: "image" },
+          { label: "Show on homepage", name: "featured", widget: "boolean", default: true },
+          { label: "ID", name: "id", widget: "string" },
+        ]}
+
+  - name: "pricing"
+    label: "Pricing"
+    file: "data/pricing.json"
+    format: "json"
+    fields:
+      - { label: "Packages", name: "items", widget: "list", fields: [
+          { label: "Package name", name: "name", widget: "string" },
+          { label: "Price", name: "price", widget: "string" },
+          { label: "Note", name: "note", widget: "string" },
+          { label: "Features", name: "features", widget: "list" },
+          { label: "Highlight this package", name: "highlighted", widget: "boolean", default: false },
+        ]}
+
+  - name: "articles"
+    label: "Design Tips (Articles)"
+    file: "data/articles.json"
+    format: "json"
+    fields:
+      - { label: "Articles", name: "items", widget: "list", fields: [
+          { label: "Title", name: "title", widget: "string" },
+          { label: "Excerpt", name: "excerpt", widget: "text" },
+          { label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD" },
+          { label: "Full article", name: "body", widget: "text" },
+          { label: "ID", name: "id", widget: "string" },
+        ]}
+
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - name: "general"
+        label: "General & Contact"
+        file: "data/settings.json"
+        fields:
+          - { label: "Studio name", name: "studio_name", widget: "string" }
+          - { label: "Tagline (headline)", name: "tagline", widget: "string" }
+          - { label: "Subtext under headline", name: "subtext", widget: "text" }
+          - { label: "About heading", name: "about_heading", widget: "string" }
+          - { label: "About body", name: "about_body", widget: "text" }
+          - { label: "USP 1 title", name: "usp_1_title", widget: "string" }
+          - { label: "USP 1 body", name: "usp_1_body", widget: "string" }
+          - { label: "USP 2 title", name: "usp_2_title", widget: "string" }
+          - { label: "USP 2 body", name: "usp_2_body", widget: "string" }
+          - { label: "USP 3 title", name: "usp_3_title", widget: "string" }
+          - { label: "USP 3 body", name: "usp_3_body", widget: "string" }
+          - { label: "USP 4 title", name: "usp_4_title", widget: "string" }
+          - { label: "USP 4 body", name: "usp_4_body", widget: "string" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Phone", name: "phone", widget: "string" }
+          - { label: "WhatsApp link", name: "whatsapp_link", widget: "string", hint: "Format: https://wa.me/8801XXXXXXXXX" }
+          - { label: "Facebook link", name: "facebook_link", widget: "string", required: false }
+          - { label: "Instagram link", name: "instagram_link", widget: "string", required: false }

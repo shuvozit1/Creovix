@@ -1,0 +1,25 @@
+{
+  "items": [
+    {
+      "id": "why-logo-matters",
+      "title": "Why a strong logo matters for a small business",
+      "excerpt": "Your logo is often the first thing a customer sees. Here's why it's worth getting right from day one.",
+      "date": "2026-08-01",
+      "body": "Write the full article here from the admin panel."
+    },
+    {
+      "id": "color-in-branding",
+      "title": "How color choice shapes how customers see your brand",
+      "excerpt": "Color isn't decoration — it's communication. A short guide to choosing brand colors with intention.",
+      "date": "2026-08-05",
+      "body": "Write the full article here from the admin panel."
+    },
+    {
+      "id": "poster-design-tips",
+      "title": "5 quick tips for posters that actually get noticed",
+      "excerpt": "Simple, practical rules for making a poster stand out in a crowded feed or a busy street.",
+      "date": "2026-08-10",
+      "body": "Write the full article here from the admin panel."
+    }
+  ]
+}

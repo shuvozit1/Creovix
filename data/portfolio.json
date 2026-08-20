@@ -1,0 +1,46 @@
+{
+  "items": [
+    {
+      "id": "logo-01",
+      "title": "Placeholder Logo One",
+      "category": "Logo",
+      "image": "images/portfolio/placeholder-1.jpg",
+      "featured": true
+    },
+    {
+      "id": "logo-02",
+      "title": "Placeholder Logo Two",
+      "category": "Logo",
+      "image": "images/portfolio/placeholder-2.jpg",
+      "featured": true
+    },
+    {
+      "id": "logo-03",
+      "title": "Placeholder Logo Three",
+      "category": "Logo",
+      "image": "images/portfolio/placeholder-3.jpg",
+      "featured": true
+    },
+    {
+      "id": "poster-01",
+      "title": "Placeholder Poster One",
+      "category": "Poster",
+      "image": "images/portfolio/placeholder-4.jpg",
+      "featured": true
+    },
+    {
+      "id": "poster-02",
+      "title": "Placeholder Poster Two",
+      "category": "Poster",
+      "image": "images/portfolio/placeholder-5.jpg",
+      "featured": true
+    },
+    {
+      "id": "poster-03",
+      "title": "Placeholder Poster Three",
+      "category": "Poster",
+      "image": "images/portfolio/placeholder-6.jpg",
+      "featured": true
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "items": [
+    {
+      "name": "Basic",
+      "price": "৳1,500",
+      "note": "per project",
+      "features": [
+        "1 logo concept",
+        "2 revisions",
+        "PNG + JPG files",
+        "3 day delivery"
+      ],
+      "highlighted": false
+    },
+    {
+      "name": "Standard",
+      "price": "৳3,000",
+      "note": "per project",
+      "features": [
+        "3 logo concepts",
+        "Unlimited revisions",
+        "All source files (AI/PSD)",
+        "Social media kit included",
+        "2 day delivery"
+      ],
+      "highlighted": true
+    },
+    {
+      "name": "Premium",
+      "price": "৳6,000",
+      "note": "per project",
+      "features": [
+        "Full brand identity",
+        "Unlimited revisions",
+        "Business card + letterhead",
+        "Social media branding kit",
+        "Priority 24hr delivery"
+      ],
+      "highlighted": false
+    }
+  ]
+}
