@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: shuvozit1/Creovix   # <-- change this to your actual GitHub username/repo
+  repo: shuvozit1/Creovix
   branch: main
   base_url: https://api.netlify.com
   auth_endpoint: auth
@@ -11,42 +11,48 @@ public_folder: "images/portfolio"
 collections:
   - name: "portfolio"
     label: "Portfolio"
-    file: "data/portfolio.json"
-    format: "json"
-    fields:
-      - { label: "Items", name: "items", widget: "list", fields: [
-          { label: "Title", name: "title", widget: "string" },
-          { label: "Category", name: "category", widget: "select", options: ["Logo","Poster","Business Card","Facebook Cover","Other"] },
-          { label: "Image", name: "image", widget: "image" },
-          { label: "Show on homepage", name: "featured", widget: "boolean", default: true },
-          { label: "ID", name: "id", widget: "string" },
-        ]}
+    files:
+      - name: "portfolio"
+        label: "Portfolio Items"
+        file: "data/portfolio.json"
+        fields:
+          - { label: "Items", name: "items", widget: "list", fields: [
+              { label: "Title", name: "title", widget: "string" },
+              { label: "Category", name: "category", widget: "select", options: ["Logo","Poster","Business Card","Facebook Cover","Other"] },
+              { label: "Image", name: "image", widget: "image" },
+              { label: "Show on homepage", name: "featured", widget: "boolean", default: true },
+              { label: "ID", name: "id", widget: "string" },
+            ]}
 
   - name: "pricing"
     label: "Pricing"
-    file: "data/pricing.json"
-    format: "json"
-    fields:
-      - { label: "Packages", name: "items", widget: "list", fields: [
-          { label: "Package name", name: "name", widget: "string" },
-          { label: "Price", name: "price", widget: "string" },
-          { label: "Note", name: "note", widget: "string" },
-          { label: "Features", name: "features", widget: "list" },
-          { label: "Highlight this package", name: "highlighted", widget: "boolean", default: false },
-        ]}
+    files:
+      - name: "pricing"
+        label: "Pricing Packages"
+        file: "data/pricing.json"
+        fields:
+          - { label: "Packages", name: "items", widget: "list", fields: [
+              { label: "Package name", name: "name", widget: "string" },
+              { label: "Price", name: "price", widget: "string" },
+              { label: "Note", name: "note", widget: "string" },
+              { label: "Features", name: "features", widget: "list" },
+              { label: "Highlight this package", name: "highlighted", widget: "boolean", default: false },
+            ]}
 
   - name: "articles"
     label: "Design Tips (Articles)"
-    file: "data/articles.json"
-    format: "json"
-    fields:
-      - { label: "Articles", name: "items", widget: "list", fields: [
-          { label: "Title", name: "title", widget: "string" },
-          { label: "Excerpt", name: "excerpt", widget: "text" },
-          { label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD" },
-          { label: "Full article", name: "body", widget: "text" },
-          { label: "ID", name: "id", widget: "string" },
-        ]}
+    files:
+      - name: "articles"
+        label: "Articles"
+        file: "data/articles.json"
+        fields:
+          - { label: "Articles", name: "items", widget: "list", fields: [
+              { label: "Title", name: "title", widget: "string" },
+              { label: "Excerpt", name: "excerpt", widget: "text" },
+              { label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD" },
+              { label: "Full article", name: "body", widget: "text" },
+              { label: "ID", name: "id", widget: "string" },
+            ]}
 
   - name: "settings"
     label: "Site Settings"
