@@ -2,8 +2,6 @@ backend:
   name: github
   repo: shuvozit1/Creovix
   branch: main
-  base_url: https://beamish-begonia-dde582.netlify.app
-  auth_endpoint: auth
 
 media_folder: "images/portfolio"
 public_folder: "images/portfolio"
