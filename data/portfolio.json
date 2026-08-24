@@ -22,6 +22,13 @@
       "featured": true
     },
     {
+      "featured": true,
+      "title": "FreshOne — Pure. Natural. Organic.",
+      "category": "Logo",
+      "image": "images/portfolio/freshone-logo-mockup-file-2.jpg",
+      "id": "freshone-logo"
+    },
+    {
       "id": "graduate-brand-identity",
       "title": "Graduate — Brand Identity",
       "category": "Poster",
